@@ -16,8 +16,11 @@ variables of C.-N. Yu and T. Joachims. The source code may not be distributed
 without the permission of the authors. Therefore, we provide a diff located in
 latentsvm/latentsvm.patch that contains the changes to the Latent SSVM implementation template
 available at http://www.cs.cornell.edu/~cnyu/latentssvm/ .
-To obtain our training code, download this template, apply our patch file with the
-patch command (on Unix systems) and recompile the package. For instructions, see 
+To obtain our training code, download this template, extract it and apply our patch file with the
+patch command (on Unix systems) by executing the following command in the extracted directory 
+    patch -p1 -i path/to/pottics/repo/latentsvm/latentsvm.patch
+Please adapt the path to your copy of this repository.
+Afterwards recompile the package. For instructions, see 
 the README contained in the Latent SSVM template.
 The input files for SVM training can be generated with the Python function
 `util.binfile.export_svmstruct_dataset`.
